@@ -17,24 +17,24 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
 
     </dependencies>
     <properties>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
     </properties>
-
-    <build>
-    <plugins>
+     
     <plugin>
     <groupId>org.codehaus.mojo</groupId>
-    <artifactId>exec-maven-plugin</artifactId>
-    <version>1.4.0</version>
-    <configuration>
-    <mainClass>ru.javastudy.junit.Main</mainClass>
-    </configuration>
-    </plugin>
-    </plugins>
-    </build>
-
+  <artifactId>exec-maven-plugin</artifactId>
+  <version>1.4.0</version>
+  <configuration>
+    <mainClass>org.dhappy.test.NeoTraverse</mainClass>
+  </configuration>
+</plugin>    
 </project>

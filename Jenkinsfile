@@ -1,12 +1,8 @@
 node('master') {
-    
+    stage('SCM Checkout') {
+          git 'https://github.com/CoderGoGo/JavaSimpleProject'    
+    }
     stage('Build java') {
- 
-          sh 'cd /home/ubuntu/compose'
-          sh 'mvn compile'
-          
+          sh 'mvn package'    
     }
     }
-
-    
-
